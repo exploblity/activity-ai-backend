@@ -47,8 +47,16 @@ Gunakan bahasa Indonesia yang sederhana.
       });
     }
 
+   let text = "";
+
+    try {
+      text = data.output[0].content[0].text;
+    } catch (e) {
+      text = JSON.stringify(data);
+    }
+    
     return res.status(200).json({
-      result: data.output_text || "AI tidak memberikan jawaban."
+      result: text
     });
 
   } catch (error) {
