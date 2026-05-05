@@ -19,13 +19,35 @@ export default async function handler(req, res) {
 
   try {
     const prompt = `
-Buat ilustrasi menggambarkan karakter mahasiswa berdasarkan aktivitas berikut:
+Berdasarkan aktivitas berikut:
 
 ${activities}
 
-Gambarkan satu suasana dan ekspresi yang mencerminkan pola produktivitas mahasiswa tersebut.
-Gaya ilustrasi modern dan lucu.
-Jangan gunakan teks dalam gambar.
+Bayangkan mahasiswa tersebut direpresentasikan sebagai seekor hewan lucu.
+
+Tentukan:
+
+- jenis hewan yang sesuai dengan kepribadian dan pola aktivitasnya
+
+- ekspresi wajah (rajin, malas, santai, lelah, fokus, dll)
+
+- gaya visual yang lucu, imut, dan menarik
+
+Buat satu gambar saja (single character), bukan banyak adegan.
+
+Ketentuan:
+
+- gaya ilustrasi kartun / chibi / cute
+
+- warna cerah dan menarik
+
+- fokus pada satu karakter utama
+
+- boleh menambahkan properti kecil (buku, HP, bantal, dll) sesuai aktivitas
+
+- jangan menampilkan teks di dalam gambar
+
+Gambar harus mencerminkan kepribadian berdasarkan aktivitas tersebut.
     `;
 
     const response = await fetch("https://api.openai.com/v1/images/generations", {
