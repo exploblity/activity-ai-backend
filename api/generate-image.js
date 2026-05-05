@@ -19,12 +19,12 @@ export default async function handler(req, res) {
 
   try {
     const prompt = `
-Buat ilustrasi digital edukatif tentang karakter mahasiswa berdasarkan aktivitas berikut:
+Buat ilustrasi menggambarkan karakter mahasiswa berdasarkan aktivitas berikut:
 
 ${activities}
 
-Gambarkan suasana, ekspresi, dan simbol aktivitas yang mencerminkan pola produktivitas mahasiswa tersebut.
-Gaya ilustrasi modern, ramah, warna cerah, cocok untuk aplikasi edukasi.
+Gambarkan satu suasana dan ekspresi yang mencerminkan pola produktivitas mahasiswa tersebut.
+Gaya ilustrasi modern dan lucu.
 Jangan gunakan teks dalam gambar.
     `;
 
